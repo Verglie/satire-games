@@ -1,0 +1,4 @@
+#!/bin/sh
+# Blokkeert een commit met secrets erin (harde regel 11).
+command -v gitleaks >/dev/null 2>&1 || { echo "pre-commit: gitleaks ontbreekt — draai scripts/setup.sh" >&2; exit 1; }
+exec gitleaks git --pre-commit --staged --redact --no-banner

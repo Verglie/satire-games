@@ -1,0 +1,4 @@
+project = "satire-games"
+
+[capture]
+ignore_paths = ["**/.env", "**/.env.*", "**/*.key", "games/*/results/**"]

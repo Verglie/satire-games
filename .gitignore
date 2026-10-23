@@ -1,0 +1,26 @@
+# Unity
+**/unity/[Ll]ibrary/
+**/unity/[Tt]emp/
+**/unity/[Ll]ogs/
+**/unity/[Bb]uild/
+**/unity/[Bb]uilds/
+**/unity/[Oo]bj/
+**/unity/[Uu]ser[Ss]ettings/
+**/unity/MemoryCaptures/
+*.csproj
+*.sln
+*.pidb
+*.userprefs
+
+# Speeltest-resultaten (alleen de laatste ronde gaat mee, via git add -f)
+games/*/results/*
+!games/*/results/.gitkeep
+
+# Secrets en lokale state
+.env
+.env.*
+*.key
+.claude/settings.local.json
+
+# OS
+.DS_Store
